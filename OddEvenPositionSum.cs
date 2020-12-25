@@ -30,7 +30,10 @@ namespace _6._3.EqualSumsOddEven
                     }
                 }
 
-                if (evenSum == oddSum) Console.Write($"{i} ");
+                if (evenSum == oddSum) 
+                {
+                    Console.Write($"{i} ");
+                }
             }
         }
     }
