@@ -12,8 +12,6 @@ namespace Judge
             // Also you need to keep individual statistics for each user - the total points of all constests. You should end your program when you receive the command "no more time".
             // At that point you should print each contest in order of input, for each contest print the participants ordered by points in desecending order, than ordered by name in ascending order.After that, you should print individual statistics for every participant ordered by total points in desecnding order, and then by alphabetical order
 
-
-
          Dictionary<string, Dictionary<string, int>> contestsInfo = new Dictionary<string, Dictionary<string, int>>();
             Dictionary<string, Dictionary<string, int>> individualStandings = new Dictionary<string, Dictionary<string, int>>();
 
@@ -68,6 +66,7 @@ namespace Judge
                 foreach (var student in contest.Value.OrderByDescending(s => s.Value).ThenBy(s => s.Key))
                 {
                     Console.WriteLine($"{counter}. {student.Key} <::> {student.Value}");
+                    
                     counter++;
                 }
             }
