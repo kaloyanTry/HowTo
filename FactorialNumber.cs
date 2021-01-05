@@ -14,9 +14,9 @@ namespace HowToConsole
 
             for (int i = n; i > 1; i--)
             {
-                factorialNumber *= i;
-                
+                factorialNumber *= i; 
             }
+            
             Console.WriteLine(factorialNumber);
         }
     }
