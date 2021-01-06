@@ -39,12 +39,14 @@ namespace TribonacciSequence
             BigInteger nMinus1 = 2;
 
             BigInteger maxLimit = num;
+            
             for (int i = 0; i < maxLimit - 3; i++)
             {
                 num = nMinus3 + nMinus2 + nMinus1;
                 nMinus3 = nMinus2;
                 nMinus2 = nMinus1;
                 nMinus1 = num;
+                
                 Console.Write($"{num} ");
             }
         }
