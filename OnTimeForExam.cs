@@ -43,9 +43,17 @@ namespace _3._3.OnTimeExampMy
             {
                 hour = diffEarly / 60;
                 minutes = diffEarly % 60;
+                
                 Console.WriteLine("Early");
-                if (minutes < 10) Console.WriteLine($"{hour}:0{minutes} hours before the start");
-                else Console.WriteLine($"{hour}:{minutes} hours before the start");
+                
+                if (minutes < 10) 
+                {
+                    Console.WriteLine($"{hour}:0{minutes} hours before the start");
+                }
+                else 
+                {
+                    Console.WriteLine($"{hour}:{minutes} hours before the start");
+                }
             }
             else if (diffAfter > 0 && diffAfter <= 59)
             {
@@ -56,9 +64,17 @@ namespace _3._3.OnTimeExampMy
             {
                 hour = diffAfter / 60;
                 minutes = diffAfter % 60;
+                
                 Console.WriteLine("Late");
-                if (minutes < 10) Console.WriteLine($"{hour}:0{minutes} hours after the start");
-                else Console.WriteLine($"{hour}:{minutes} hours after the start");
+                
+                if (minutes < 10) 
+                {
+                    Console.WriteLine($"{hour}:0{minutes} hours after the start");
+                }
+                else 
+                {
+                    Console.WriteLine($"{hour}:{minutes} hours after the start");
+                }
             }
         }
     }
