@@ -19,7 +19,10 @@ namespace _6._3.PassGenerator
                         {
                             for (int i5 = 2; i5 <= n; i5++)
                             {
-                                if (i5 > i1 && i5 > i2) Console.Write($"{i1}{i2}{(char)i3}{(char)i4}{i5} ");
+                                if (i5 > i1 && i5 > i2) 
+                                {
+                                    Console.Write($"{i1}{i2}{(char)i3}{(char)i4}{i5} ");
+                                }
                             }
                         }
                     }
