@@ -29,6 +29,7 @@ namespace VendingMashine
 
                 moneyInput = Console.ReadLine();
             }
+            
             string product = Console.ReadLine();
 
             while (product != "End")
