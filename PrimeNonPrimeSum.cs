@@ -7,6 +7,7 @@ namespace _6._3.SumPrimesNon
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
+            
             int sumPrimes = 0;
             int sumNums = 0;
 
@@ -42,6 +43,7 @@ namespace _6._3.SumPrimesNon
                     if (isPrime) sumPrimes += nums;
                     else sumNums += nums;
                 }
+                
                 input = Console.ReadLine();
             }
 
