@@ -15,7 +15,9 @@ namespace PalindromeIntegers
                 input = Console.ReadLine();
             }
         }
+        
         static bool IsPalindrome(string inputNum)
+            
         {
             char[] reversedInput = inputNum.Reverse().ToArray();
 
@@ -26,6 +28,7 @@ namespace PalindromeIntegers
                     return false;
                 }
             }
+            
             return true;
         }
     }
