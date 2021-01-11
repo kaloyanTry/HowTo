@@ -8,11 +8,12 @@ namespace Judge
     {
         static void Main(string[] args)
         {
+            //PROBLEM:
             //You will receive several input lines. The constestName and userName are strings, the given points will be an integer number.You need to keep track of every contest and individual statistics of every user. You should check if such contest already exists, and if not, add it, otherwise check if the current user Is participating in the contest, if he is participating take the higher score, otherwise just add it. 
             // Also you need to keep individual statistics for each user - the total points of all constests. You should end your program when you receive the command "no more time".
             // At that point you should print each contest in order of input, for each contest print the participants ordered by points in desecending order, than ordered by name in ascending order.After that, you should print individual statistics for every participant ordered by total points in desecnding order, and then by alphabetical order
 
-         Dictionary<string, Dictionary<string, int>> contestsInfo = new Dictionary<string, Dictionary<string, int>>();
+            Dictionary<string, Dictionary<string, int>> contestsInfo = new Dictionary<string, Dictionary<string, int>>();
             Dictionary<string, Dictionary<string, int>> individualStandings = new Dictionary<string, Dictionary<string, int>>();
 
             string inputLine = Console.ReadLine();
