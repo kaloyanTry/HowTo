@@ -12,6 +12,7 @@ namespace _6._3.EqualSumsOddEven
             for (int i = n1; i <= n2; i++)
             {
                 string numString = i.ToString();
+                
                 int evenSum = 0;
                 int oddSum = 0;
 
